@@ -1,10 +1,11 @@
 import './App.css';
-import Header from './components/header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <PortfolioContainer/>
     </div>
   );
 }
