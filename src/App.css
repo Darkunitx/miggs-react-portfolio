@@ -1,5 +1,53 @@
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #e6e4e4 !important;
+  color: #000000 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+}
+
+:root {
+  --primary-color: #e6e4e4;
+  --secondary-color: #282c34;
+  --tertiary-color: #61dafb;
+  --quaternary-color: #000000;
+}
+
 .App {
   text-align: center;
+}
+
+nav a.nav-link {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: var(--primary-color) !important;
+
+}
+
+.navbar-brand {
+  max-width: 13.25rem;
+  padding: 0 !important;
+  height: auto;
+}
+
+.logo {
+  width: 13.25rem;
 }
 
 .App-logo {
@@ -21,7 +69,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
