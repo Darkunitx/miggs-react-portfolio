@@ -1,13 +1,16 @@
 import React from 'react';
 import logo from '../assets/images/m tree logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import styled from "styled-components";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <NavContainer className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="logo..." /></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <FontAwesomeIcon icon={faBars} style={{ color: '#fff' }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,8 +50,18 @@ function NavTabs({ currentPage, handlePageChange }) {
           </ul>
         </div>
       </div>
-    </nav>
+    </NavContainer>
   );
 }
 
 export default NavTabs;
+
+const NavContainer = styled.nav`
+  .container {
+  background: var(--secondary-color);
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  }
+`;
