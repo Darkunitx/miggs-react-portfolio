@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/miggs-react-portfolio/static/css/main.7076b7b9.css",
-    "main.js": "/miggs-react-portfolio/static/js/main.df17387c.js",
+    "main.css": "/miggs-react-portfolio/static/css/main.f8472c68.css",
+    "main.js": "/miggs-react-portfolio/static/js/main.d66da7d5.js",
     "static/js/787.76023f5f.chunk.js": "/miggs-react-portfolio/static/js/787.76023f5f.chunk.js",
     "index.html": "/miggs-react-portfolio/index.html",
-    "main.7076b7b9.css.map": "/miggs-react-portfolio/static/css/main.7076b7b9.css.map",
-    "main.df17387c.js.map": "/miggs-react-portfolio/static/js/main.df17387c.js.map",
+    "main.f8472c68.css.map": "/miggs-react-portfolio/static/css/main.f8472c68.css.map",
+    "main.d66da7d5.js.map": "/miggs-react-portfolio/static/js/main.d66da7d5.js.map",
     "787.76023f5f.chunk.js.map": "/miggs-react-portfolio/static/js/787.76023f5f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7076b7b9.css",
-    "static/js/main.df17387c.js"
+    "static/css/main.f8472c68.css",
+    "static/js/main.d66da7d5.js"
   ]
 }
