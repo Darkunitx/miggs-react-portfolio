@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/miggs-react-portfolio/static/css/main.2467f5cd.css",
-    "main.js": "/miggs-react-portfolio/static/js/main.9d3f6bef.js",
+    "main.js": "/miggs-react-portfolio/static/js/main.5c67d40f.js",
     "static/js/787.76023f5f.chunk.js": "/miggs-react-portfolio/static/js/787.76023f5f.chunk.js",
     "static/media/profile.jpg": "/miggs-react-portfolio/static/media/profile.843c227c214541c80bf7.jpg",
     "index.html": "/miggs-react-portfolio/index.html",
     "main.2467f5cd.css.map": "/miggs-react-portfolio/static/css/main.2467f5cd.css.map",
-    "main.9d3f6bef.js.map": "/miggs-react-portfolio/static/js/main.9d3f6bef.js.map",
+    "main.5c67d40f.js.map": "/miggs-react-portfolio/static/js/main.5c67d40f.js.map",
     "787.76023f5f.chunk.js.map": "/miggs-react-portfolio/static/js/787.76023f5f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2467f5cd.css",
-    "static/js/main.9d3f6bef.js"
+    "static/js/main.5c67d40f.js"
   ]
 }
