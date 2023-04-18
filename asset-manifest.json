@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/miggs-react-portfolio/static/css/main.2467f5cd.css",
-    "main.js": "/miggs-react-portfolio/static/js/main.5c67d40f.js",
-    "static/js/787.76023f5f.chunk.js": "/miggs-react-portfolio/static/js/787.76023f5f.chunk.js",
+    "main.js": "/miggs-react-portfolio/static/js/main.51459aa2.js",
+    "static/js/787.1ac48b8b.chunk.js": "/miggs-react-portfolio/static/js/787.1ac48b8b.chunk.js",
+    "static/media/cryptoscope.jpg": "/miggs-react-portfolio/static/media/cryptoscope.b4410ef762f80e66ea7a.jpg",
+    "static/media/homebros.jpg": "/miggs-react-portfolio/static/media/homebros.b050493ae87e8dc7f324.jpg",
+    "static/media/comingsoon.jpg": "/miggs-react-portfolio/static/media/comingsoon.a9eb56a6c3e1c08a4a7b.jpg",
     "static/media/profile.jpg": "/miggs-react-portfolio/static/media/profile.843c227c214541c80bf7.jpg",
     "index.html": "/miggs-react-portfolio/index.html",
     "main.2467f5cd.css.map": "/miggs-react-portfolio/static/css/main.2467f5cd.css.map",
-    "main.5c67d40f.js.map": "/miggs-react-portfolio/static/js/main.5c67d40f.js.map",
-    "787.76023f5f.chunk.js.map": "/miggs-react-portfolio/static/js/787.76023f5f.chunk.js.map"
+    "main.51459aa2.js.map": "/miggs-react-portfolio/static/js/main.51459aa2.js.map",
+    "787.1ac48b8b.chunk.js.map": "/miggs-react-portfolio/static/js/787.1ac48b8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2467f5cd.css",
-    "static/js/main.5c67d40f.js"
+    "static/js/main.51459aa2.js"
   ]
 }
