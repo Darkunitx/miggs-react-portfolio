@@ -9,13 +9,13 @@ function Footer() {
                     <div className="row">
                         {/* Column 1 */}
                         <div className="col-md-3 col-sm-6">
-                            <h4 className="footer-linkedin"> <a href="https://www.facebook.com/AmazingGoku">LinkedIn</a></h4>
+                            <h4 className="footer-linkedin"> <a href="https://www.linkedin.com/in/miguelmontenegro100/">LinkedIn</a></h4>
                             <ul className="list-unstyled">
                             </ul>
                         </div>
                         {/* Column 2 */}
                         <div className="col-md-3 col-sm-6">
-                            <h4 className="footer-github"> <a href="https://www.linkedin.com/in/miguel-montenegro-663113197/">Github</a></h4>
+                            <h4 className="footer-github"> <a href="https://github.com/Darkunitx">Github</a></h4>
                             <ul className="list-unstyled">
                             </ul>
                         </div>

@@ -1,69 +1,41 @@
-import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const formInitialDetails = {
-    name: '',
-    email: '',
-    message: '',
-  };
-  
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [formSubmitted, setFormSubmitted] = useState('Send');
-  const [status, setStatus] = useState({});
+  const form = useRef();
+  const [submissionStatus, setSubmissionStatus] = useState(null);
 
-  const onFormUpdate = (catefory, value) => {
-    setFormDetails({
-      ...formDetails,
-      [catefory]: value,
-    });
-  };
-
-  const onFormSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setFormSubmitted('Sending...');
-    const response = await fetch('https://localhost:3000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setFormSubmitted('Send');
-    const data = response.json();
-    setFormDetails(formInitialDetails);
-    if (data.status === 'success') {
-      setStatus({ type: 'success', message: 'Message Sent' });
-    } else {
-      setStatus({ type: 'error', message: 'Message Not Sent' });
-    }
+
+    emailjs.sendForm('service_gq9m7kf', 'template_47dj2v4', form.current, 'AWwf_OKTKb2IvXvoZ')
+      .then((result) => {
+          console.log(result.text);
+          setSubmissionStatus('success');
+      }, (error) => {
+          console.log(error.text);
+          setSubmissionStatus('error');
+      });
+      e.target.reset();
   };
-
-
+    
   return (
-    <div  className=" container contact align-items-center" id="connect">
-      <div className="row align-items-center">
-        <div className="col-md-6">
-          {/* <img src={} alt="contact" className="img-fluid" /> */}
-        </div>
-        <div className="col-md-6">
-          <h1 className="display-4">Contact Me</h1>
-          <form onSubmit={onFormSubmit}>
-            <div className="row">
-              <div className="col-md-6">
-                <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.value)} />
-              </div>
-              <div className="col-md-6">
-                <input type="email" value={formDetails.email} placeholder="Email" onChange={(e) => onFormUpdate('email', e.target.value)} />
-              </div>
-              <div>
-                <textarea name="message" id="message" cols="30" rows="10" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-              <button type="submit"><span>{formSubmitted}</span></button>
-              </div>
-            </div>
-          </form>
-        </div>
+    <section>
+      <div className="container">
+        <h2 className='text-center'>Contact Me</h2>
+        <form ref={form} onSubmit={sendEmail} className="form-control card">
+          <input type="text" placeholder="Full Name" name="user_name" required />
+          <input type="email" placeholder="Email" name="user_email" required />
+          <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+          <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
+        {submissionStatus === 'success' && (
+          <p className="text-success">Your message has been sent.</p>
+        )}
+        {submissionStatus === 'error' && (
+          <p className="text-danger">There was an error sending your message. Please try again later.</p>
+        )}
       </div>
-    </div>
-  );
+    </section>
+  )
 }
